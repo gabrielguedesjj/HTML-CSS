@@ -11,19 +11,17 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     table{
-        width: 400px;
+        width: 400px; /*largura*/
+        height: 400px; /*altura*/
         border-collapse: collapse; /*colar a borda*/
-    }
-    tr.linha{
-        background-color: blueviolet;
     }
     td{
         border: 1px solid black; /*formato da borda */
         padding: 8px; /*espaço na borda*/
+        text-align: center; /*alinhamento horizonal*/
+        vertical-align: bottom; /*alinhamento vertical*/
     }
-    td.ponto{
-        background-color: chartreuse;
-    }
+    
 </style>
 <body>
     <h1>minha primeira tabela</h1>
@@ -31,8 +29,8 @@
         HIERARQUIA DE TABELAS (SIMPLES)
         TABLE = tabela
             TABLE ROW = linha da tabela 
-                TABLE HEADER= cabeçalho de tabela
-                TABLE DATA = dado de tabela 
+                TABLE HEADER= cabeçalho de tabela tr
+                TABLE DATA = dado de tabela td
     -->
     <table>
         <tr> <!-- Primeira linha-->
@@ -45,7 +43,7 @@
             <td>B2</td>
             <td>C2</td>
         </tr>
-        <tr class="linha"> 
+        <tr> 
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
@@ -53,7 +51,7 @@
         <tr>
             <td>A4</td>
             <td>B4</td>
-            <td class="ponto">C4</td>
+            <td>C4</td>
         </tr>
     </table>
 </body>
